@@ -3,6 +3,7 @@ CC := g++
 SRCDIR := src
 BUILDDIR := build
 TARGET := bin/main
+TARGETDIR := bin
  
 SRCEXT := cpp
 SOURCES := $(shell find $(SRCDIR) -type f -name *.$(SRCEXT))
@@ -11,6 +12,7 @@ CFLAGS := -Wall -pedantic
 INC := -Iinclude
 
 $(TARGET): $(OBJECTS)
+	@mkdir -p $(TARGETDIR)
 	@echo " Linking..."
 	@echo " $(CC) $^ -o $(TARGET) "; $(CC) $^ -o $(TARGET)
 
@@ -20,7 +22,7 @@ $(BUILDDIR)/%.o: $(SRCDIR)/%.$(SRCEXT)
 
 clean:
 	@echo " Cleaning..."; 
-	@echo " $(RM) -r $(BUILDDIR) $(TARGET)"; $(RM) -r $(BUILDDIR) $(TARGET)
+	@echo " $(RM) -r $(BUILDDIR) $(TARGET) $(TARGETDIR)"; $(RM) -r $(BUILDDIR) $(TARGET) $(TARGETDIR)
 
 
 .PHONY: clean
