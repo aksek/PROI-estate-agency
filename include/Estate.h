@@ -27,13 +27,13 @@ std::string Estate<priceType>::getInfo()
 }
 
 template <typename priceType>
-void Estate<priceType>::setData(std::string name, std::string district, unsigned age, int price, Owner *ownerFeed)
+void Estate<priceType>::setData(std::string name, std::string district, unsigned age, int price, Owner *owner)
 {
     this->name = name;
     this->district = district;
     this->age = age;
     this->price = price;
-    owner = ownerFeed;
+    this->owner = owner;
 }
 
 #endif // ESTATE

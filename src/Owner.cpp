@@ -23,7 +23,7 @@ void Owner::setData(string nameFeed, string surnameFeed, unsigned ageFeed)
 {
     name = nameFeed;
     surname = surnameFeed;
-    if(ageFeed != 0) age = ageFeed;
+    if(ageFeed != 0) age = ageFeed; //if ageFeed == 0, age stays unchanged
 }
 
 void Owner::setData(unsigned ageFeed)
