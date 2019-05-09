@@ -1,3 +1,9 @@
+/*
+Project: Project2
+ Author: Michal Sulek
+ Grader: Wiktor Kusmirek
+*/
+
 #ifndef LIBRARY
 #define LIBRARY
 

@@ -1,3 +1,9 @@
+/*
+Project: Project2
+ Author: Michal Sulek
+ Grader: Wiktor Kusmirek
+*/
+
 #include <iostream>
 #include <string>
 #include "Owner.h"
