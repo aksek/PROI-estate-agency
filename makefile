@@ -8,8 +8,8 @@ TARGETDIR := bin
 SRCEXT := cpp
 SOURCES := $(shell find $(SRCDIR) -type f -name *.$(SRCEXT))
 OBJECTS := $(patsubst $(SRCDIR)/%,$(BUILDDIR)/%,$(SOURCES:.$(SRCEXT)=.o))
-CFLAGS := -Wall -pedantic
-INC := -Iinclude
+CFLAGS := -std=c++11 -Wall -pedantic
+INC := -I include
 
 $(TARGET): $(OBJECTS)
 	@mkdir -p $(TARGETDIR)
