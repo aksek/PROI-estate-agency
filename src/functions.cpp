@@ -16,4 +16,5 @@ Owner operator+ (Owner person, unsigned number)
 }
 
 
+
 void print(std::string s){std::cout << s << std::endl;}

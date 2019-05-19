@@ -6,6 +6,7 @@ Project: Project2
 
 #include <iostream>
 #include <string>
+#include "Data.h"
 #include "Owner.h"
 #include "Estate.h"
 #include "Library.h"
@@ -27,10 +28,15 @@ int main()
     cout << andrew.getInfo() << endl;
     cout << andrew.getInfo() << endl << steve.getInfo() << endl;
 
-
     Estate<unsigned> house;
     house.setData("Domek", "Niebuszewo", 103, 1000000, &andrew);
     cout << house.getInfo() << endl;
+
+    cout << "Polimorphic:" << endl;
+    Data *info = &andrew;
+    cout << info->getInfo() << endl;
+    info = &house;
+    cout << info->getInfo() << endl;
 
     Library data;
     cout << "Estates:" << endl;

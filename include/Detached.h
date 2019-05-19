@@ -15,8 +15,8 @@ class Detached : public Estate<unsigned>
     public:
         Detached();
         virtual ~Detached();
-        unsigned int GetparcelArea() { return parcelArea; }
         void SetparcelArea(unsigned int val) { parcelArea = val; }
+        //std::string getInfo();
     protected:
     private:
         unsigned int parcelArea;

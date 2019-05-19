@@ -10,9 +10,10 @@ Project: Project2
 #include <iostream>
 #include <string>
 #include "Owner.h"
+#include "Data.h"
 
 template <typename priceType>
-class Estate
+class Estate : public Data
 {
     private:
     std::string name;
@@ -23,7 +24,11 @@ class Estate
 
     public:
     std::string getInfo();
+    unsigned getAge() {return age;}
     void setData(std::string nameFeed, std::string districtFeed, unsigned ageFeed, int price = 0, Owner *ownerFeed = 0);
+    void setData(unsigned ageFeed) {age = ageFeed;}
+   // Estate() : name("Unknown"), district("Unknown"), age(0) {}
+   // Estate(std::string name, std::string district, unsigned age, int price = 0, Owner *owner = 0) : name(name), district(district), age(age), price(price), owner(owner) {}
 };
 
 template <typename priceType>
