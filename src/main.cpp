@@ -2,6 +2,10 @@
 Project: Project2
  Author: Michal Sulek
  Grader: Wiktor Kusmirek
+ ///////////////////////
+ Modified:
+ Project: Project3
+  Author: Aniela Kosek
 */
 
 #include <iostream>
@@ -32,10 +36,14 @@ int main()
     house.setData("Domek", "Niebuszewo", 103, 1000000, &andrew);
     cout << house.getInfo() << endl;
 
-    cout << "Polimorphic:" << endl;
     Data *info = &andrew;
     cout << info->getInfo() << endl;
+    increaseAge(info, 100);
+    cout << info->getInfo() << endl;
+
     info = &house;
+    cout << info->getInfo() << endl;
+    increaseAge(info, 100);
     cout << info->getInfo() << endl;
 
     Library data;

@@ -19,7 +19,7 @@ template <typename vectorType> void printVector(std::vector<std::string> output)
 }
 
 Owner operator+ (Owner person, unsigned number);
-
+void increaseAge(Data* info, unsigned number);
 
 void print(std::string s);
 

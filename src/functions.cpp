@@ -15,6 +15,10 @@ Owner operator+ (Owner person, unsigned number)
     return person;
 }
 
+void increaseAge(Data* info, unsigned number)
+{
+    info->setData(info->getAge() + number);
+}
 
 
 void print(std::string s){std::cout << s << std::endl;}
