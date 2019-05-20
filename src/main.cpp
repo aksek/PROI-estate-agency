@@ -3,9 +3,9 @@ Project: Project2
  Author: Michal Sulek
  Grader: Wiktor Kusmirek
  ///////////////////////
- Modified:
- Project: Project3
-  Author: Aniela Kosek
+ Modified for:
+Project: Project3
+     By: Aniela Kosek
 */
 
 #include <iostream>
@@ -34,6 +34,11 @@ int main()
 
     Estate<unsigned> house;
     house.setData("Domek", "Niebuszewo", 103, 1000000, &andrew);
+    cout << house.getInfo() << endl;
+
+    house.discount(500000);
+    cout << house.getInfo() << endl;
+    house.discount(500002);
     cout << house.getInfo() << endl;
 
     Data *info = &andrew;
