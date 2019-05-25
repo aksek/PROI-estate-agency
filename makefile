@@ -23,6 +23,10 @@ $(BUILDDIR)/%.o: $(SRCDIR)/%.$(SRCEXT)
 clean:
 	@echo " Cleaning..."; 
 	@echo " $(RM) -r $(BUILDDIR) $(TARGET) $(TARGETDIR)"; $(RM) -r $(BUILDDIR) $(TARGET) $(TARGETDIR)
+	
+tester: 
+	$(CC) $(CFLAGS) $(INC) -c -o build/OwnerTest.o test/OwnerTest.cpp
+	$(CC) build/Owner.o build/OwnerTest.o -o bin/tester
 
 
 .PHONY: clean
