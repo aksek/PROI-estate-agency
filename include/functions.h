@@ -2,6 +2,10 @@
 Project: Project2
  Author: Michal Sulek
  Grader: Wiktor Kusmirek
+ ///////////////////////
+Modified for:
+ Project: Project3
+  Author: Aniela Kosek
 */
 
 #ifndef FUNCTIONS
@@ -14,7 +18,6 @@ Project: Project2
 
 template <typename vectorType> void printVector(std::vector<std::string> output)
 {
-
     for(std::vector<std::string>::iterator i = output.begin(); i != output.end(); ++i) std::cout << *i << std::endl;
 }
 

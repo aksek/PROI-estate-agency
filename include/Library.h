@@ -2,6 +2,10 @@
 Project: Project2
  Author: Michal Sulek
  Grader: Wiktor Kusmirek
+ ///////////////////////
+Modified for:
+ Project: Project3
+  Author: Aniela Kosek
 */
 
 #ifndef LIBRARY

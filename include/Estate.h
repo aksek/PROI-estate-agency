@@ -33,8 +33,6 @@ class Estate : public Data
     void setData(std::string nameFeed, std::string districtFeed, unsigned ageFeed, int price = 0, Owner *ownerFeed = 0);
     void setData(unsigned ageFeed) {age = ageFeed;}
     void discount(priceType amount);
-   // Estate() : name("Unknown"), district("Unknown"), age(0) {}
-   // Estate(std::string name, std::string district, unsigned age, int price = 0, Owner *owner = 0) : name(name), district(district), age(age), price(price), owner(owner) {}
 };
 
 template <typename priceType>

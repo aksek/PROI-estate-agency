@@ -1,3 +1,9 @@
+/*
+Project: Project3
+ Author: Aniela Kosek
+ Grader: Wiktor Kusmirek
+*/
+
 #ifndef DATA_H
 #define DATA_H
 
